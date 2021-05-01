@@ -5,10 +5,10 @@ if (process.env.NODE_ENV !== 'usingEnv') {
 var mqtt = require('mqtt')
 var options = {
     port: 1883, //don't put 8883 because it's encrypted 
-    host: 'mqtt://' + '', //put your ibm cloud host in the empty string
-    clientId: '' + Math.random().toString(16).substr(2, 8), // a:orgId: in the empty string
-    username: '', // your API key
-    password: '', // your API token
+    host: 'mqtt://' + 'y15wsi.messaging.internetofthings.ibmcloud.com', //put your ibm cloud host in the empty string
+    clientId: 'a:y15wsi:' + Math.random().toString(16).substr(2, 8), // a:orgId: in the empty string
+    username: 'a-y15wsi-cioirhzcbm', // your API key
+    password: 'Q6wsAaIQsRYK5dr@*f', // your API token
     keepalive: 60,
     reconnectPeriod: 1000,
     protocolId: 'MQIsdp',
